@@ -1,0 +1,31 @@
+{
+  "experiment_info": {
+    "name": "first_experiment",
+    "recorded_at": "2025-09-06 20:24:28",
+    "ocr_file": "data/ocr_results/ocr_results.csv",
+    "total_images": 19,
+    "total_texts": 1265
+  },
+  "performance_metrics": {
+    "avg_confidence": 0.371,
+    "max_confidence": 1.0,
+    "min_confidence": 0.0,
+    "excellent_count": 130,
+    "excellent_rate": 0.103,
+    "good_count": 121,
+    "good_rate": 0.096,
+    "fair_count": 169,
+    "fair_rate": 0.134,
+    "poor_count": 845,
+    "poor_rate": 0.668
+  },
+  "quality_assessment": {
+    "overall_quality": "Poor",
+    "issues_found": [
+      "Very low average confidence",
+      "High percentage of poor recognition",
+      "High variance in recognition quality"
+    ],
+    "needs_improvement": true
+  }
+}
