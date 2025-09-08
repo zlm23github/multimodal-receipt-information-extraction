@@ -1,0 +1,81 @@
+1. Without adaptive Images Processing
+
+
+2. After Adaptive Images Processing
+
+=== First Experiment Configuration ===
+Date: 2025-09-06 20:24:28
+Method: Original OCR Processing (No Adaptive Parameters)
+
+OCR Parameters:
+- width_ths: 0.7 (default)
+- height_ths: 0.7 (default)
+- paragraph: False
+- batch_size: 1
+
+Image Preprocessing:
+- Gaussian Blur: (5, 5)
+- Adaptive Threshold: ADAPTIVE_THRESH_GAUSSIAN_C
+- Block Size: 11
+- C Value: 2
+
+Results:
+- Total Images: 19
+- Total Texts: 1265
+- Average Confidence: 0.371
+- Excellent Rate: 10.3%
+- Good Rate: 9.6%
+- Fair Rate: 13.4%
+- Poor Rate: 66.8%
+- Overall Quality: Poor
+
+Issues Found:
+- Very low average confidence
+- High percentage of poor recognition
+- High variance in recognition quality
+
+
+
+=== Third Experiment Configuration (Improved Adaptive) ===
+Date: 2025-09-06 20:59:36
+Method: Improved Adaptive OCR Processing
+
+Image Quality Analysis Thresholds:
+- Dark image: brightness < 100 (was 80)
+- Bright image: brightness > 160 (was 180)
+- Low contrast: contrast < 60 (was 50)
+- Noisy image: laplacian_var < 100
+
+Adaptive OCR Parameters:
+- Low contrast: width_ths=0.3, height_ths=0.3 (very lenient)
+- Noisy image: width_ths=0.6, height_ths=0.6 (strict)
+- Dark image: width_ths=0.4, height_ths=0.4 (very lenient)
+- Bright image: width_ths=0.5, height_ths=0.5 (lenient)
+- Default: width_ths=0.7, height_ths=0.7
+
+Enhanced Preprocessing:
+- CLAHE: clipLimit=4.0 (was 3.0), tileGridSize=(8,8)
+- Gamma correction: gamma=0.7 for low contrast
+- Bilateral filter for noise reduction
+- Adaptive brightness adjustment
+
+Results:
+- Total Images: 19
+- Total Texts: 1037
+- Average Confidence: 0.418 (improved from 0.371)
+- Excellent Rate: 12.5% (improved from 10.3%)
+- Good Rate: 9.8% (slightly improved from 9.6%)
+- Fair Rate: 14.9% (improved from 13.4%)
+- Poor Rate: 62.7% (improved from 66.8%)
+- Overall Quality: Fair (improved from Poor)
+
+Issues Found:
+- Still very low average confidence
+- High percentage of poor recognition
+- High variance in recognition quality
+
+Key Problems Identified:
+- Images are too bright (brightness ~180, normal ~120-140)
+- Low contrast (contrast ~49, below 60 threshold)
+- Receipt printing quality issues (thermal printing artifacts)
+- EasyOCR limitations with receipt-specific text
