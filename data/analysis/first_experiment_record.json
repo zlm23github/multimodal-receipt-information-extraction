@@ -1,23 +1,23 @@
 {
   "experiment_info": {
     "name": "first_experiment",
-    "recorded_at": "2025-09-08 14:15:06",
+    "recorded_at": "2025-09-08 14:33:18",
     "ocr_file": "data/ocr_results/ocr_results.csv",
     "total_images": 1,
-    "total_texts": 55
+    "total_texts": 106
   },
   "performance_metrics": {
-    "avg_confidence": 0.475,
+    "avg_confidence": 0.407,
     "max_confidence": 1.0,
-    "min_confidence": 0.006,
-    "excellent_count": 10,
-    "excellent_rate": 0.182,
-    "good_count": 4,
-    "good_rate": 0.073,
-    "fair_count": 13,
-    "fair_rate": 0.236,
-    "poor_count": 28,
-    "poor_rate": 0.509
+    "min_confidence": 0.011,
+    "excellent_count": 9,
+    "excellent_rate": 0.085,
+    "good_count": 13,
+    "good_rate": 0.123,
+    "fair_count": 15,
+    "fair_rate": 0.142,
+    "poor_count": 69,
+    "poor_rate": 0.651
   },
   "quality_assessment": {
     "overall_quality": "Fair",
