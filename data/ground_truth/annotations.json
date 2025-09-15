@@ -1,0 +1,62 @@
+{
+  "8.jpg": {
+    "store_name": "COSTCO WHOLESALE",
+    "store_address": "16375 N. Washington St., Thornton, CO 80023",
+    "member_id": "2X Member 111826278335",
+    "date": "04/20/2016",
+    "time": "15:00",
+    "items": [
+      {
+        "name": "FF BS BREAST",
+        "item_number": "673919",
+        "price": 23.99
+      },
+      {
+        "name": "KS DICED TOM",
+        "item_number": "633561", 
+        "price": 6.49
+      },
+      {
+        "name": "JACKORGSALSA",
+        "item_number": "967596",
+        "price": 2.97
+      },
+      {
+        "name": "18CT EGGS",
+        "item_number": "878137",
+        "price": 12.87
+      },
+      {
+        "name": "GRAPE TOMATO",
+        "item_number": "77053",
+        "price": 6.29
+      },
+      {
+        "name": "ECO HALF PAN",
+        "item_number": "404609",
+        "price": 6.49
+      },
+      {
+        "name": "GRND TURKEY",
+        "item_number": "55992",
+        "price": 18.47
+      },
+      {
+        "name": "CHPD ONION",
+        "item_number": "263423",
+        "price": 3.59
+      },
+      {
+        "name": "MONT JACK 2#",
+        "item_number": "22101",
+        "price": 4.45
+      }
+    ],
+    "subtotal": 85.61,
+    "tax": 3.52,
+    "total": 89.13,
+    "total_items": 11,
+    "operator": "PEPPER",
+    "terminal": "629 4 172 14"
+  }
+}

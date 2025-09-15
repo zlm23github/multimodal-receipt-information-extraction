@@ -1,0 +1,141 @@
+{
+  "8.jpg": {
+    "image_name": "8.jpg",
+    "store_name_accuracy": 0.0,
+    "date_accuracy": 0.0,
+    "total_accuracy": 1.0,
+    "tax_accuracy": 0.0,
+    "items_accuracy": {
+      "overall_accuracy": 0.7902737196852425,
+      "item_count_accuracy": 1.0,
+      "avg_similarity": 0.7003910281217751,
+      "matched_count": 8,
+      "total_gt_items": 9,
+      "total_ocr_items": 9,
+      "item_matching": [
+        {
+          "gt_item": {
+            "name": "FF BS BREAST",
+            "item_number": "673919",
+            "price": 23.99
+          },
+          "ocr_item": {
+            "item_number": "673919",
+            "name": "673919 FF BS BREAST",
+            "price": null,
+            "tax_indicator": null,
+            "confidence": 0.3554729988739078
+          },
+          "similarity": 0.5157894736842106
+        },
+        {
+          "gt_item": {
+            "name": "KS DICED TOM",
+            "item_number": "633561",
+            "price": 6.49
+          },
+          "ocr_item": {
+            "item_number": "633561",
+            "name": "633561 KS DICED TOM",
+            "price": 6.49,
+            "tax_indicator": "E",
+            "confidence": 0.9120783299720555
+          },
+          "similarity": 0.8157894736842106
+        },
+        {
+          "gt_item": {
+            "name": "18CT EGGS",
+            "item_number": "878137",
+            "price": 12.87
+          },
+          "ocr_item": {
+            "item_number": "878137",
+            "name": "878137 18CT EGGS",
+            "price": 12.87,
+            "tax_indicator": "E",
+            "confidence": 0.41697212333077704
+          },
+          "similarity": 0.78125
+        },
+        {
+          "gt_item": {
+            "name": "GRAPE TOMATO",
+            "item_number": "77053",
+            "price": 6.29
+          },
+          "ocr_item": {
+            "item_number": null,
+            "name": "77053 GRAPE TOMATO",
+            "price": 6.29,
+            "tax_indicator": "E",
+            "confidence": 0.48061808676322654
+          },
+          "similarity": 0.6333333333333333
+        },
+        {
+          "gt_item": {
+            "name": "ECO HALF PAN",
+            "item_number": "404609",
+            "price": 6.49
+          },
+          "ocr_item": {
+            "item_number": "404609",
+            "name": "404609 ECO HALF PAN",
+            "price": 6.49,
+            "tax_indicator": "A",
+            "confidence": 0.8984782168643818
+          },
+          "similarity": 0.8157894736842106
+        },
+        {
+          "gt_item": {
+            "name": "GRND TURKEY",
+            "item_number": "55992",
+            "price": 18.47
+          },
+          "ocr_item": {
+            "item_number": null,
+            "name": "55992 GRND  TURKEY",
+            "price": 18.47,
+            "tax_indicator": "E",
+            "confidence": 0.9032837665008091
+          },
+          "similarity": 0.6235294117647059
+        },
+        {
+          "gt_item": {
+            "name": "CHPD ONION",
+            "item_number": "263423",
+            "price": 3.59
+          },
+          "ocr_item": {
+            "item_number": "263423",
+            "name": "263423 CHPD ONION",
+            "price": 3.59,
+            "tax_indicator": "E",
+            "confidence": 0.9515191383375683
+          },
+          "similarity": 0.7941176470588236
+        },
+        {
+          "gt_item": {
+            "name": "MONT JACK 2#",
+            "item_number": "22101",
+            "price": 4.45
+          },
+          "ocr_item": {
+            "item_number": null,
+            "name": "22101 MONT JACK 2#",
+            "price": 4.45,
+            "tax_indicator": "E",
+            "confidence": 0.6735086566041539
+          },
+          "similarity": 0.6235294117647059
+        }
+      ]
+    },
+    "overall_accuracy": 0.6772205989852081,
+    "price_accuracy": 0.7777777777777778
+  }
+}

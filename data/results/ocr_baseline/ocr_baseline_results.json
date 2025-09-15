@@ -1,0 +1,73 @@
+{
+  "8_corrected": {
+    "store_name": "Unknown Store",
+    "total_amount": 89.13,
+    "date": "Unknown Date",
+    "items": [
+      {
+        "item_number": "673919",
+        "name": "673919 FF BS BREAST",
+        "price": null,
+        "tax_indicator": null,
+        "confidence": 0.3554729988739078
+      },
+      {
+        "item_number": "633561",
+        "name": "633561 KS DICED TOM",
+        "price": 6.49,
+        "tax_indicator": "E",
+        "confidence": 0.9120783299720555
+      },
+      {
+        "item_number": "967596",
+        "name": "967596 JACKORGSALSA 3 @ 4.29",
+        "price": null,
+        "tax_indicator": null,
+        "confidence": 0.8899441486974368
+      },
+      {
+        "item_number": "878137",
+        "name": "878137 18CT EGGS",
+        "price": 12.87,
+        "tax_indicator": "E",
+        "confidence": 0.41697212333077704
+      },
+      {
+        "item_number": null,
+        "name": "77053 GRAPE TOMATO",
+        "price": 6.29,
+        "tax_indicator": "E",
+        "confidence": 0.48061808676322654
+      },
+      {
+        "item_number": "404609",
+        "name": "404609 ECO HALF PAN",
+        "price": 6.49,
+        "tax_indicator": "A",
+        "confidence": 0.8984782168643818
+      },
+      {
+        "item_number": null,
+        "name": "55992 GRND  TURKEY",
+        "price": 18.47,
+        "tax_indicator": "E",
+        "confidence": 0.9032837665008091
+      },
+      {
+        "item_number": "263423",
+        "name": "263423 CHPD ONION",
+        "price": 3.59,
+        "tax_indicator": "E",
+        "confidence": 0.9515191383375683
+      },
+      {
+        "item_number": null,
+        "name": "22101 MONT JACK 2#",
+        "price": 4.45,
+        "tax_indicator": "E",
+        "confidence": 0.6735086566041539
+      }
+    ],
+    "confidence": 0.7207062549218692
+  }
+}

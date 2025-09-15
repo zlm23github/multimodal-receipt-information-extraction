@@ -1,0 +1,10 @@
+{
+  "total_images": 1,
+  "avg_store_name_accuracy": 0.0,
+  "avg_date_accuracy": 0.0,
+  "avg_total_accuracy": 1.0,
+  "avg_tax_accuracy": 0.0,
+  "avg_items_accuracy": 0.7902737196852425,
+  "avg_price_accuracy": 0.7777777777777778,
+  "avg_overall_accuracy": 0.6772205989852081
+}
