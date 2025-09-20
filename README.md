@@ -1,12 +1,12 @@
-# Receipt Multimodal Classification
+# Multimodal Receipt Information Extraction
 
-A comprehensive system for extracting and analyzing information from receipt images using multimodal approaches (OCR + Image features). This project demonstrates how multimodal fusion can enhance text extraction accuracy, especially when single-modality OCR performance is low and fragmented.
+A comprehensive system for extracting and analyzing information from receipt images using multimodal approaches (OCR + Image features). This project demonstrates how multimodal fusion can enhance information extraction accuracy, especially when single-modality OCR performance is low and fragmented.
 
 ## 🎯 Project Overview
 
-This project implements a complete pipeline for receipt text extraction and analysis, including:
+This project implements a complete pipeline for receipt information extraction and analysis, including:
 
-- **OCR Baseline**: Region-based text extraction using EasyOCR
+- **OCR Baseline**: Region-based information extraction using EasyOCR
 - **Image Feature Processing**: Deep learning-based feature extraction for visual analysis
 - **Multimodal Fusion**: Combining text and image features for improved accuracy
 - **Performance Evaluation**: Comprehensive accuracy metrics and comparison
