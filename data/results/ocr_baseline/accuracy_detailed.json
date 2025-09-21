@@ -135,7 +135,378 @@
         }
       ]
     },
-    "overall_accuracy": 0.6772205989852081,
-    "price_accuracy": 0.7777777777777778
+    "price_accuracy": 0.911543251219427,
+    "overall_accuracy": 0.7307267883618679
+  },
+  "9.jpg": {
+    "image_name": "9.jpg",
+    "store_name_accuracy": 0.0,
+    "date_accuracy": 0.0,
+    "total_accuracy": 0.0,
+    "tax_accuracy": 0.0,
+    "items_accuracy": {
+      "overall_accuracy": 0.5990392156862745,
+      "item_count_accuracy": 0.6,
+      "avg_similarity": 0.5986274509803922,
+      "matched_count": 3,
+      "total_gt_items": 3,
+      "total_ocr_items": 5,
+      "item_matching": [
+        {
+          "gt_item": {
+            "name": "DIET COKE",
+            "item_number": "854342",
+            "price": 17.29
+          },
+          "ocr_item": {
+            "item_number": "854342",
+            "name": "854342 *DIET COKExx",
+            "price": 17.29,
+            "tax_indicator": "A",
+            "confidence": 0.47032174551893685
+          },
+          "similarity": 0.75
+        },
+        {
+          "gt_item": {
+            "name": "CA REDEMP VA",
+            "item_number": "8000000000",
+            "price": 1.75
+          },
+          "ocr_item": {
+            "item_number": null,
+            "name": "E 8ooooooo00 CA REDEMP VA",
+            "price": 1.75,
+            "tax_indicator": "A",
+            "confidence": 0.3364175530502272
+          },
+          "similarity": 0.54
+        },
+        {
+          "gt_item": {
+            "name": "CHARMIN",
+            "item_number": "1636598",
+            "price": 26.49
+          },
+          "ocr_item": {
+            "item_number": null,
+            "name": "1636598 **CHARMINxX",
+            "price": 26.49,
+            "tax_indicator": "A",
+            "confidence": 0.45027784494315043
+          },
+          "similarity": 0.5058823529411764
+        }
+      ]
+    },
+    "price_accuracy": 1.0,
+    "overall_accuracy": 0.666266339869281
+  },
+  "10.jpg": {
+    "image_name": "10.jpg",
+    "store_name_accuracy": 0.0,
+    "date_accuracy": 1.0,
+    "total_accuracy": 0.33890624999999996,
+    "tax_accuracy": 0.0,
+    "items_accuracy": {
+      "overall_accuracy": 0.049999999999999996,
+      "item_count_accuracy": 0.16666666666666666,
+      "avg_similarity": 0.0,
+      "matched_count": 0,
+      "total_gt_items": 1,
+      "total_ocr_items": 6,
+      "item_matching": []
+    },
+    "price_accuracy": 1.0,
+    "overall_accuracy": 0.47694531250000005
+  },
+  "11.jpg": {
+    "image_name": "11.jpg",
+    "store_name_accuracy": 0.75,
+    "date_accuracy": 1.0,
+    "total_accuracy": 1.0,
+    "tax_accuracy": 0.0,
+    "items_accuracy": {
+      "overall_accuracy": 0.7510580870304726,
+      "item_count_accuracy": 1.0,
+      "avg_similarity": 0.6443686957578182,
+      "matched_count": 18,
+      "total_gt_items": 24,
+      "total_ocr_items": 24,
+      "item_matching": [
+        {
+          "gt_item": {
+            "name": "CHARMIN",
+            "item_number": "1358822",
+            "price": 22.49
+          },
+          "ocr_item": {
+            "item_number": null,
+            "name": "1358822 CHARMIN",
+            "price": 22.49,
+            "tax_indicator": null,
+            "confidence": 0.9608965330801346
+          },
+          "similarity": 0.5333333333333333
+        },
+        {
+          "gt_item": {
+            "name": "ORANGES",
+            "item_number": "9462",
+            "price": 12.99
+          },
+          "ocr_item": {
+            "item_number": null,
+            "name": "9462 ORANGES",
+            "price": 12.99,
+            "tax_indicator": null,
+            "confidence": 0.7847638755019604
+          },
+          "similarity": 0.5916666666666667
+        },
+        {
+          "gt_item": {
+            "name": "HONEYDEW",
+            "item_number": "83424",
+            "price": 3.99
+          },
+          "ocr_item": {
+            "item_number": null,
+            "name": "83424 HONEYDEW",
+            "price": 3.99,
+            "tax_indicator": null,
+            "confidence": 0.8983499567254889
+          },
+          "similarity": 0.5857142857142856
+        },
+        {
+          "gt_item": {
+            "name": "GOLDEN PINE",
+            "item_number": "8789",
+            "price": 2.99
+          },
+          "ocr_item": {
+            "item_number": null,
+            "name": "8789 GOLDEN PINE",
+            "price": 2.99,
+            "tax_indicator": null,
+            "confidence": 0.6002070896231452
+          },
+          "similarity": 0.64375
+        },
+        {
+          "gt_item": {
+            "name": "DOVE16CT",
+            "item_number": "660212",
+            "price": 15.99
+          },
+          "ocr_item": {
+            "item_number": "660212",
+            "name": "660212 DOVEIGCT",
+            "price": 15.99,
+            "tax_indicator": null,
+            "confidence": 0.49451056069130106
+          },
+          "similarity": 0.7666666666666666
+        },
+        {
+          "gt_item": {
+            "name": "ADIDAS SOCK",
+            "item_number": "949985",
+            "price": 12.99
+          },
+          "ocr_item": {
+            "item_number": "949985",
+            "name": "949985 ADIDAS Sock",
+            "price": 12.99,
+            "tax_indicator": null,
+            "confidence": 0.7128674626254268
+          },
+          "similarity": 0.8055555555555556
+        },
+        {
+          "gt_item": {
+            "name": "OATNUT BREAD",
+            "item_number": "858187",
+            "price": 5.79
+          },
+          "ocr_item": {
+            "item_number": "858187",
+            "name": "858187 OATNUT BREAD",
+            "price": 5.79,
+            "tax_indicator": null,
+            "confidence": 0.90898712342814
+          },
+          "similarity": 0.8157894736842106
+        },
+        {
+          "gt_item": {
+            "name": "BAGELS",
+            "item_number": "31865",
+            "price": 5.99
+          },
+          "ocr_item": {
+            "item_number": null,
+            "name": "31865 BAGELS",
+            "price": 5.99,
+            "tax_indicator": null,
+            "confidence": 0.9994112773231726
+          },
+          "similarity": 0.55
+        },
+        {
+          "gt_item": {
+            "name": "COUNTRY FR 2",
+            "item_number": "14368",
+            "price": 5.99
+          },
+          "ocr_item": {
+            "item_number": null,
+            "name": "14368 COUNTRY FR 2",
+            "price": 5.99,
+            "tax_indicator": null,
+            "confidence": 0.9669520409736717
+          },
+          "similarity": 0.6333333333333333
+        },
+        {
+          "gt_item": {
+            "name": "ORGANIC CUKE",
+            "item_number": "568915",
+            "price": 4.99
+          },
+          "ocr_item": {
+            "item_number": "568915",
+            "name": "568915 ORGANIC CUKE",
+            "price": 4.99,
+            "tax_indicator": null,
+            "confidence": 0.6423891457124009
+          },
+          "similarity": 0.8157894736842106
+        },
+        {
+          "gt_item": {
+            "name": "STRAWBERRIES",
+            "item_number": "27003",
+            "price": 13.98
+          },
+          "ocr_item": {
+            "item_number": null,
+            "name": "56366 RASPBERRIES 2 @ 6.99",
+            "price": 13.98,
+            "tax_indicator": null,
+            "confidence": 0.9953820133194692
+          },
+          "similarity": 0.5173913043478261
+        },
+        {
+          "gt_item": {
+            "name": "BLUEBERRIES",
+            "item_number": "57554",
+            "price": 8.98
+          },
+          "ocr_item": {
+            "item_number": null,
+            "name": "2 @ 4.49 57554 BLUEBERRIES",
+            "price": 8.98,
+            "tax_indicator": null,
+            "confidence": 0.6166638643252235
+          },
+          "similarity": 0.5391304347826087
+        },
+        {
+          "gt_item": {
+            "name": "PASTURE EGGS",
+            "item_number": "1068080",
+            "price": 7.49
+          },
+          "ocr_item": {
+            "item_number": null,
+            "name": "1068080 PASTURE EGGS",
+            "price": 7.49,
+            "tax_indicator": null,
+            "confidence": 0.6532236129268444
+          },
+          "similarity": 0.6
+        },
+        {
+          "gt_item": {
+            "name": "2%ORG YOGURT",
+            "item_number": "990483",
+            "price": 4.79
+          },
+          "ocr_item": {
+            "item_number": "990483",
+            "name": "990483 230RG  YOGURT",
+            "price": 4.79,
+            "tax_indicator": null,
+            "confidence": 0.6425179853168368
+          },
+          "similarity": 0.7894736842105263
+        },
+        {
+          "gt_item": {
+            "name": "PHL CRM CHSE",
+            "item_number": "40532",
+            "price": 8.49
+          },
+          "ocr_item": {
+            "item_number": null,
+            "name": "40532 PHL CRM CHSE",
+            "price": 8.49,
+            "tax_indicator": null,
+            "confidence": 0.56186738711065
+          },
+          "similarity": 0.6333333333333333
+        },
+        {
+          "gt_item": {
+            "name": "CLEMENTINES",
+            "item_number": "18600",
+            "price": 5.99
+          },
+          "ocr_item": {
+            "item_number": null,
+            "name": "18600 CLEMENTINES",
+            "price": 5.99,
+            "tax_indicator": null,
+            "confidence": 0.829013735624054
+          },
+          "similarity": 0.6235294117647059
+        },
+        {
+          "gt_item": {
+            "name": "RAW HONEY",
+            "item_number": "1100521",
+            "price": 13.49
+          },
+          "ocr_item": {
+            "item_number": null,
+            "name": "1100521 RAW HONEY",
+            "price": 13.49,
+            "tax_indicator": null,
+            "confidence": 0.8627938103744358
+          },
+          "similarity": 0.5647058823529412
+        },
+        {
+          "gt_item": {
+            "name": "ORG ATAULFO",
+            "item_number": "1018249",
+            "price": 6.49
+          },
+          "ocr_item": {
+            "item_number": null,
+            "name": "1018249 ORG ATAULFO",
+            "price": 6.49,
+            "tax_indicator": null,
+            "confidence": 0.6419586580121049
+          },
+          "similarity": 0.5894736842105264
+        }
+      ]
+    },
+    "price_accuracy": 0.9835184763718997,
+    "overall_accuracy": 0.858830625360949
   }
 }

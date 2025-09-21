@@ -2,7 +2,7 @@
   "8.jpg": {
     "store_name": "COSTCO WHOLESALE",
     "store_address": "16375 N. Washington St., Thornton, CO 80023",
-    "member_id": "2X Member 111826278335",
+    "member_id": "111826278335",
     "date": "04/20/2016",
     "time": "15:00",
     "items": [
@@ -58,5 +58,191 @@
     "total_items": 11,
     "operator": "PEPPER",
     "terminal": "629 4 172 14"
+  },
+  "9.jpg": {
+    "store_name": "COSTCO WHOLESALE",
+    "store_address": "Hayward BD #823, 22330 Hathaway Avenue, Hayward, CA 94541",
+    "phone": "(510) 259-6600",
+    "member_id": "Unknown",
+    "date": "Unknown",
+    "time": "Unknown",
+    "items": [
+      {
+        "name": "DIET COKE",
+        "item_number": "854342",
+        "price": 17.29
+      },
+      {
+        "name": "CA REDEMP VA",
+        "item_number": "8000000000",
+        "price": 1.75
+      },
+      {
+        "name": "CHARMIN",
+        "item_number": "1636598",
+        "price": 26.49
+      }
+    ],
+    "subtotal": 39.73,
+    "tax": 4.27,
+    "total": 44.00,
+    "total_items": 4,
+    "operator": "Unknown",
+    "terminal": "Unknown"
+  },
+  "10.jpg": {
+    "store_name": "COSTCO WHOLESALE",
+    "member_id": "111904253722",
+    "date": "04/25/2023",
+    "time": "17:56",
+    "items": [
+      {
+        "name": "CHAIR",
+        "item_number": "2622071",
+        "price": 19.97
+      }
+    ],
+    "subtotal": 19.97,
+    "tax": 1.72,
+    "total": 21.69,
+    "total_items": 1,
+    "operator": "64",
+    "terminal": "11",
+    "warehouse": "738",
+    "transaction": "427"
+  },
+  "11.jpg": {
+    "store_name": "COSTCO WHOLESALE",
+    "member_id": "821170501020",
+    "date": "02/08/2019",
+    "time": "12:10",
+    "items": [
+      {
+        "name": "CHARMIN",
+        "item_number": "1358822",
+        "price": 22.49
+      },
+      {
+        "name": "ORANGES",
+        "item_number": "9462",
+        "price": 12.99
+      },
+      {
+        "name": "HONEYDEW",
+        "item_number": "83424",
+        "price": 3.99
+      },
+      {
+        "name": "GOLDEN PINE",
+        "item_number": "8789",
+        "price": 2.99
+      },
+      {
+        "name": "DOVE16CT",
+        "item_number": "660212",
+        "price": 15.99
+      },
+      {
+        "name": "ADIDAS SOCK",
+        "item_number": "949985",
+        "price": 12.99
+      },
+      {
+        "name": "SOUR DOUGH",
+        "item_number": "879104",
+        "price": 0.0
+      },
+      {
+        "name": "OATNUT BREAD",
+        "item_number": "858187",
+        "price": 5.79
+      },
+      {
+        "name": "BAGELS",
+        "item_number": "31865",
+        "price": 5.99
+      },
+      {
+        "name": "COUNTRY FR 2",
+        "item_number": "14368",
+        "price": 5.99
+      },
+      {
+        "name": "ORG ROMAINE",
+        "item_number": "24587",
+        "price": 3.79
+      },
+      {
+        "name": "KS WALNUT 3#",
+        "item_number": "36285",
+        "price": 10.89
+      },
+      {
+        "name": "ORGANIC CUKE",
+        "item_number": "568915",
+        "price": 4.99
+      },
+      {
+        "name": "SAFE CATCH",
+        "item_number": "1292274",
+        "price": 11.49
+      },
+      {
+        "name": "RASPBERRIES",
+        "item_number": "56366",
+        "price": 5.49
+      },
+      {
+        "name": "STRAWBERRIES",
+        "item_number": "27003",
+        "price": 13.98
+      },
+      {
+        "name": "BLACKBERRIES",
+        "item_number": "72904",
+        "price": 5.99
+      },
+      {
+        "name": "BLUEBERRIES",
+        "item_number": "57554",
+        "price": 8.98
+      },
+      {
+        "name": "PASTURE EGGS",
+        "item_number": "1068080",
+        "price": 7.49
+      },
+      {
+        "name": "2%ORG YOGURT",
+        "item_number": "990483",
+        "price": 4.79
+      },
+      {
+        "name": "PHL CRM CHSE",
+        "item_number": "40532",
+        "price": 8.49
+      },
+      {
+        "name": "CLEMENTINES",
+        "item_number": "18600",
+        "price": 5.99
+      },
+      {
+        "name": "RAW HONEY",
+        "item_number": "1100521",
+        "price": 13.49
+      },
+      {
+        "name": "ORG ATAULFO",
+        "item_number": "1018249",
+        "price": 6.49
+      }
+    ],
+    "subtotal": 200.00,
+    "tax": 28.02,
+    "total": 228.02,
+    "total_items": 22,
+    "operator": "50",
+    "terminal": "Unknown"
   }
 }

@@ -1,4 +1,273 @@
 {
+  "9_corrected": {
+    "store_name": "Unknown Store",
+    "total_amount": 0.0,
+    "date": "Unknown Date",
+    "items": [
+      {
+        "item_number": null,
+        "name": "9TJt| Taywai 0, Cn (510) 259-6600 X3 Member: xxxxxxxxxxxBottom of Basketxxxrxrxxxxx XXXXXXXXXXXBOB Count 0 ****x*x*x*xrxx",
+        "price": null,
+        "tax_indicator": null,
+        "confidence": 0.1741069163987171
+      },
+      {
+        "item_number": "854342",
+        "name": "854342 *DIET COKExx",
+        "price": 17.29,
+        "tax_indicator": "A",
+        "confidence": 0.47032174551893685
+      },
+      {
+        "item_number": null,
+        "name": "E 8ooooooo00 CA REDEMP VA",
+        "price": 1.75,
+        "tax_indicator": "A",
+        "confidence": 0.3364175530502272
+      },
+      {
+        "item_number": null,
+        "name": "1636598 **CHARMINxX",
+        "price": 26.49,
+        "tax_indicator": "A",
+        "confidence": 0.45027784494315043
+      },
+      {
+        "item_number": null,
+        "name": "0000307374 #1636598",
+        "price": null,
+        "tax_indicator": null,
+        "confidence": 0.6863988498524914
+      }
+    ],
+    "confidence": 0.4480361202728108
+  },
+  "11_corrected": {
+    "store_name": "EWHOLESALE",
+    "total_amount": 228.02,
+    "date": "02/08/2019",
+    "items": [
+      {
+        "item_number": null,
+        "name": "1358822 CHARMIN",
+        "price": 22.49,
+        "tax_indicator": null,
+        "confidence": 0.9608965330801346
+      },
+      {
+        "item_number": null,
+        "name": "9462 ORANGES",
+        "price": 12.99,
+        "tax_indicator": null,
+        "confidence": 0.7847638755019604
+      },
+      {
+        "item_number": null,
+        "name": "83424 HONEYDEW",
+        "price": 3.99,
+        "tax_indicator": null,
+        "confidence": 0.8983499567254889
+      },
+      {
+        "item_number": null,
+        "name": "8789 GOLDEN PINE",
+        "price": 2.99,
+        "tax_indicator": null,
+        "confidence": 0.6002070896231452
+      },
+      {
+        "item_number": "660212",
+        "name": "660212 DOVEIGCT",
+        "price": 15.99,
+        "tax_indicator": null,
+        "confidence": 0.49451056069130106
+      },
+      {
+        "item_number": "949985",
+        "name": "949985 ADIDAS Sock",
+        "price": 12.99,
+        "tax_indicator": null,
+        "confidence": 0.7128674626254268
+      },
+      {
+        "item_number": "949985",
+        "name": "949985 ADIDAS SOCK",
+        "price": 12.99,
+        "tax_indicator": null,
+        "confidence": 0.8786939699249723
+      },
+      {
+        "item_number": "879104",
+        "name": "879104 SOUR DOUGH",
+        "price": null,
+        "tax_indicator": null,
+        "confidence": 0.732714295280403
+      },
+      {
+        "item_number": "858187",
+        "name": "858187 OATNUT BREAD",
+        "price": 5.79,
+        "tax_indicator": null,
+        "confidence": 0.90898712342814
+      },
+      {
+        "item_number": null,
+        "name": "31865 BAGELS",
+        "price": 5.99,
+        "tax_indicator": null,
+        "confidence": 0.9994112773231726
+      },
+      {
+        "item_number": null,
+        "name": "14368 COUNTRY FR 2",
+        "price": 5.99,
+        "tax_indicator": null,
+        "confidence": 0.9669520409736717
+      },
+      {
+        "item_number": null,
+        "name": "24587 ORG ROMAINE 3.7e 31865 BAGELS",
+        "price": 5.99,
+        "tax_indicator": null,
+        "confidence": 0.6554491836110662
+      },
+      {
+        "item_number": null,
+        "name": "36285 KS WALNUT 3# 10 . 89",
+        "price": null,
+        "tax_indicator": null,
+        "confidence": 0.7438724232717959
+      },
+      {
+        "item_number": "568915",
+        "name": "568915 ORGANIC CUKE",
+        "price": 4.99,
+        "tax_indicator": null,
+        "confidence": 0.6423891457124009
+      },
+      {
+        "item_number": null,
+        "name": "1292274 SAFE CATCH",
+        "price": 5.49,
+        "tax_indicator": null,
+        "confidence": 0.7755671202485559
+      },
+      {
+        "item_number": null,
+        "name": "56366 RASPBERRIES 2 @ 6.99",
+        "price": 13.98,
+        "tax_indicator": null,
+        "confidence": 0.9953820133194692
+      },
+      {
+        "item_number": null,
+        "name": "27003 STRAWBERRIES 72904 BLACKBERRIES",
+        "price": 5.99,
+        "tax_indicator": null,
+        "confidence": 0.6918035406786066
+      },
+      {
+        "item_number": null,
+        "name": "2 @ 4.49 57554 BLUEBERRIES",
+        "price": 8.98,
+        "tax_indicator": null,
+        "confidence": 0.6166638643252235
+      },
+      {
+        "item_number": null,
+        "name": "1068080 PASTURE EGGS",
+        "price": 7.49,
+        "tax_indicator": null,
+        "confidence": 0.6532236129268444
+      },
+      {
+        "item_number": "990483",
+        "name": "990483 230RG  YOGURT",
+        "price": 4.79,
+        "tax_indicator": null,
+        "confidence": 0.6425179853168368
+      },
+      {
+        "item_number": null,
+        "name": "40532 PHL CRM CHSE",
+        "price": 8.49,
+        "tax_indicator": null,
+        "confidence": 0.56186738711065
+      },
+      {
+        "item_number": null,
+        "name": "18600 CLEMENTINES",
+        "price": 5.99,
+        "tax_indicator": null,
+        "confidence": 0.829013735624054
+      },
+      {
+        "item_number": null,
+        "name": "1100521 RAW HONEY",
+        "price": 13.49,
+        "tax_indicator": null,
+        "confidence": 0.8627938103744358
+      },
+      {
+        "item_number": null,
+        "name": "1018249 ORG ATAULFO",
+        "price": 6.49,
+        "tax_indicator": null,
+        "confidence": 0.6419586580121049
+      }
+    ],
+    "confidence": 0.8159840873238274
+  },
+  "10_corrected": {
+    "store_name": "Unknown Store",
+    "total_amount": 64.0,
+    "date": "04/25/2023",
+    "items": [
+      {
+        "item_number": null,
+        "name": "2622071 CHAIR",
+        "price": 19.97,
+        "tax_indicator": "A",
+        "confidence": 0.6547688666522562
+      },
+      {
+        "item_number": null,
+        "name": "SUBTOTAL",
+        "price": 19.97,
+        "tax_indicator": null,
+        "confidence": 0.9849383160225257
+      },
+      {
+        "item_number": null,
+        "name": "Xxx* TOTAL 7216694 CASH",
+        "price": 30.0,
+        "tax_indicator": null,
+        "confidence": 0.47350893055620874
+      },
+      {
+        "item_number": null,
+        "name": "CHANGE",
+        "price": 8.31,
+        "tax_indicator": null,
+        "confidence": 0.9980076138500968
+      },
+      {
+        "item_number": null,
+        "name": "A 8.67 Tax TOTAL TaX",
+        "price": 1.72,
+        "tax_indicator": null,
+        "confidence": 0.9206453120918664
+      },
+      {
+        "item_number": null,
+        "name": "TOTAL NUMBER OF  ITEMS SOLD '04112611202 17:56 738 11 427 64",
+        "price": null,
+        "tax_indicator": null,
+        "confidence": 0.6751015120711185
+      }
+    ],
+    "confidence": 0.5699668944688776
+  },
   "8_corrected": {
     "store_name": "Unknown Store",
     "total_amount": 89.13,

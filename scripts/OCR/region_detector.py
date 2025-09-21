@@ -304,11 +304,25 @@ class ReceiptRegionDetector:
 def main():
     detector = ReceiptRegionDetector()
     
-    image_path = "data/corrected_images/8_corrected.jpg"
-    if Path(image_path).exists():
-        detector.visualize_regions(image_path)
+    # 处理所有corrected_images目录中的图片
+    corrected_images_dir = Path("data/corrected_images")
+    if corrected_images_dir.exists():
+        image_files = list(corrected_images_dir.glob("*.jpg")) + list(corrected_images_dir.glob("*.png"))
+        
+        if not image_files:
+            print("No images found in corrected_images directory")
+            return
+        
+        print(f"Found {len(image_files)} images to visualize")
+        
+        for img_file in image_files:
+            print(f"\nVisualizing regions for: {img_file.name}")
+            try:
+                detector.visualize_regions(str(img_file))
+            except Exception as e:
+                print(f"Error visualizing {img_file.name}: {e}")
     else:
-        print(f"Image not found: {image_path}")
+        print("corrected_images directory not found")
 
 
 if __name__ == "__main__":

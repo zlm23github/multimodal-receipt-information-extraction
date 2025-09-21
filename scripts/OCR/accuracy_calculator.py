@@ -81,11 +81,12 @@ class OCRAccuracyCalculator:
     def calculate_image_metrics(self, gt_data: Dict, ocr_data: Dict, image_name: str) -> Dict[str, Any]:
         metrics = {
             'image_name': image_name,
-            'store_name_accuracy': self.calculate_text_accuracy(gt_data.get('store_name', ''), ocr_data.get('store_name', '')),
-            'date_accuracy': self.calculate_text_accuracy(gt_data.get('date', ''), ocr_data.get('date', '')),
-            'total_accuracy': self.calculate_numeric_accuracy(gt_data.get('total', 0), ocr_data.get('total_amount', 0)),
-            'tax_accuracy': self.calculate_numeric_accuracy(gt_data.get('tax', 0), ocr_data.get('tax', 0)),
-            'items_accuracy': self.calculate_items_accuracy(gt_data.get('items', []), ocr_data.get('items', [])),
+            'store_name_accuracy': 0.0,
+            'date_accuracy': 0.0,
+            'total_accuracy': 0.0,
+            'tax_accuracy': 0.0,
+            'items_accuracy': {'overall_accuracy': 0.0},
+            'price_accuracy': 0.0,
             'overall_accuracy': 0.0
         }
         
@@ -98,19 +99,48 @@ class OCRAccuracyCalculator:
             'price': 0.4
         }
         
-        price_accuracy = self.calculate_price_accuracy(gt_data.get('items', []), ocr_data.get('items', []))
-        metrics['price_accuracy'] = price_accuracy
+        if gt_data.get('store_name', '').lower() not in ['unknown', 'unknown store']:
+            metrics['store_name_accuracy'] = self.calculate_text_accuracy(gt_data.get('store_name', ''), ocr_data.get('store_name', ''))
         
-        overall = (
-            metrics['store_name_accuracy'] * weights['store_name'] +
-            metrics['date_accuracy'] * weights['date'] +
-            metrics['total_accuracy'] * weights['total'] +
-            metrics['tax_accuracy'] * weights['tax'] +
-            metrics['items_accuracy']['overall_accuracy'] * weights['items'] +
-            price_accuracy * weights['price']
-        )
+        if gt_data.get('date', '').lower() not in ['unknown', 'unknown date']:
+            metrics['date_accuracy'] = self.calculate_text_accuracy(gt_data.get('date', ''), ocr_data.get('date', ''))
         
-        metrics['overall_accuracy'] = overall
+        if gt_data.get('total', 0) != 0:
+            metrics['total_accuracy'] = self.calculate_numeric_accuracy(gt_data.get('total', 0), ocr_data.get('total_amount', 0))
+        
+        if gt_data.get('tax', 0) != 0:
+            metrics['tax_accuracy'] = self.calculate_numeric_accuracy(gt_data.get('tax', 0), ocr_data.get('tax', 0))
+        
+        metrics['items_accuracy'] = self.calculate_items_accuracy(gt_data.get('items', []), ocr_data.get('items', []))
+        metrics['price_accuracy'] = self.calculate_price_accuracy(gt_data.get('items', []), ocr_data.get('items', []))
+        
+        total_weight = 0.0
+        weighted_sum = 0.0
+        
+        if gt_data.get('store_name', '').lower() not in ['unknown', 'unknown store']:
+            weighted_sum += metrics['store_name_accuracy'] * weights['store_name']
+            total_weight += weights['store_name']
+        
+        if gt_data.get('date', '').lower() not in ['unknown', 'unknown date']:
+            weighted_sum += metrics['date_accuracy'] * weights['date']
+            total_weight += weights['date']
+        
+        if gt_data.get('total', 0) != 0:
+            weighted_sum += metrics['total_accuracy'] * weights['total']
+            total_weight += weights['total']
+        
+        if gt_data.get('tax', 0) != 0:
+            weighted_sum += metrics['tax_accuracy'] * weights['tax']
+            total_weight += weights['tax']
+        
+        weighted_sum += metrics['items_accuracy']['overall_accuracy'] * weights['items']
+        weighted_sum += metrics['price_accuracy'] * weights['price']
+        total_weight += weights['items'] + weights['price']
+        
+        if total_weight > 0:
+            metrics['overall_accuracy'] = weighted_sum / total_weight
+        else:
+            metrics['overall_accuracy'] = 0.0
         
         return metrics
     
@@ -180,7 +210,7 @@ class OCRAccuracyCalculator:
                 ocr_name = self.normalize_text(ocr_item.get('name', ''))
                 name_similarity = self.calculate_text_accuracy(gt_name, ocr_name)
                 
-                if name_similarity > 0.5:
+                if name_similarity > 0.3:
                     price_accuracy = self.calculate_numeric_accuracy(gt_price, ocr_price)
                     best_price_accuracy = max(best_price_accuracy, price_accuracy)
             
@@ -276,12 +306,17 @@ class OCRAccuracyCalculator:
         if not all_metrics:
             return {}
         
+        store_name_accuracies = [m['store_name_accuracy'] for m in all_metrics.values() if m['store_name_accuracy'] > 0]
+        date_accuracies = [m['date_accuracy'] for m in all_metrics.values() if m['date_accuracy'] > 0]
+        total_accuracies = [m['total_accuracy'] for m in all_metrics.values() if m['total_accuracy'] > 0]
+        tax_accuracies = [m['tax_accuracy'] for m in all_metrics.values() if m['tax_accuracy'] > 0]
+        
         overall = {
             'total_images': len(all_metrics),
-            'avg_store_name_accuracy': sum(m['store_name_accuracy'] for m in all_metrics.values()) / len(all_metrics),
-            'avg_date_accuracy': sum(m['date_accuracy'] for m in all_metrics.values()) / len(all_metrics),
-            'avg_total_accuracy': sum(m['total_accuracy'] for m in all_metrics.values()) / len(all_metrics),
-            'avg_tax_accuracy': sum(m['tax_accuracy'] for m in all_metrics.values()) / len(all_metrics),
+            'avg_store_name_accuracy': sum(store_name_accuracies) / len(store_name_accuracies) if store_name_accuracies else 0.0,
+            'avg_date_accuracy': sum(date_accuracies) / len(date_accuracies) if date_accuracies else 0.0,
+            'avg_total_accuracy': sum(total_accuracies) / len(total_accuracies) if total_accuracies else 0.0,
+            'avg_tax_accuracy': sum(tax_accuracies) / len(tax_accuracies) if tax_accuracies else 0.0,
             'avg_items_accuracy': sum(m['items_accuracy']['overall_accuracy'] for m in all_metrics.values()) / len(all_metrics),
             'avg_price_accuracy': sum(m['price_accuracy'] for m in all_metrics.values()) / len(all_metrics),
             'avg_overall_accuracy': sum(m['overall_accuracy'] for m in all_metrics.values()) / len(all_metrics)

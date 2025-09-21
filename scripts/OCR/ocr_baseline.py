@@ -156,7 +156,7 @@ class OCRBaseline:
                 'total_amount': info['total_amount'],
                 'date': info['date'],
                 'items_count': len(info['items']),
-                'items': '; '.join([f"{item['name']}:${item['price']:.2f}" for item in info['items']]),
+                'items': '; '.join([f"{item['name']}:${item['price']:.2f}" if item['price'] is not None else f"{item['name']}:N/A" for item in info['items']]),
                 'confidence': info['confidence']
             })
         
